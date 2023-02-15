@@ -13,7 +13,7 @@ public class DepositCalculator {
         return Math.round(value * scale) / scale;
     }
 
-    public void calculateDepositSum() { // метод выводит результат в ввиде строки в консоль. Лучше в названии использовать print
+    public void printCalculateDepositSum() { // метод выводит результат в ввиде строки в консоль. Лучше в названии использовать print
         Scanner scanner = new Scanner(System.in);
         double totalSum = 0;
         int amount;
@@ -38,6 +38,6 @@ public class DepositCalculator {
         System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + totalSum);
     }
     public static void main(String[] args) {
-        new DepositCalculator().calculateDepositSum();
+        new DepositCalculator().printCalculateDepositSum();
     }
 }
