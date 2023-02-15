@@ -13,7 +13,7 @@ public class DepositCalculator {
         return Math.round(value * scale) / scale;
     }
 
-    public void calculateDepositSum() {
+    public void calculateDepositSum() { // метод выводит результат в ввиде строки в консоль. Лучше в названии использовать print
         Scanner scanner = new Scanner(System.in);
         double totalSum = 0;
         int amount;
